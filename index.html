@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <title>myaza - share your bank account details with ease</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dwzr2645p/image/upload/v1681258501/myaza/brand-assets/myaza-website-favicon-color_ixmcwd.png">
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
             background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 768px;
+            width: 100%;
+            padding: 0 20px;
+            text-align: left;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         
         .header {
-            position: absolute;
-            bottom: 60px;
-            left: 20px;
-            width: 100%;
-            text-align: left;
+            margin-bottom: 20px;
         }
         
         .header h1 {
@@ -27,19 +39,12 @@
             font-weight: 500;
         }
         
-        .subheader {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            width: 100%;
-            text-align: left;
-        }
-        
         .subheader h4 {
             font-size: 24px;
             color: #c4c4c4;
             margin: 0;
             font-weight: 500;
+            min-height: 18px;
         }
         
         @media screen and (max-width: 768px) {
@@ -54,12 +59,14 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>myaza</h1>
-    </div>
-    
-    <div class="subheader">
-        <h4>share your bank account details with ease</h4>
+    <div class="container">
+        <div class="header">
+            <h1>myaza</h1>
+        </div>
+        
+        <div class="subheader">
+            <h4>share your bank account details with ease</h4>
+        </div>
     </div>
 </body>
 </html>
